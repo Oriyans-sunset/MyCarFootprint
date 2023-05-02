@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_text_add_gas_station_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:padding="10dp"
+            android:textColorHint="#A8A8A8">
+        </EditText>
+
+        <DatePicker
+            android:id="@+id/edit_text_add_gas_station_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner">
+
+        </DatePicker>
+
+        <RadioGroup
+            android:id="@+id/edit_text_add_gas_station_fuel_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose fuel type:" />
+
+            <RadioButton
+                android:id="@+id/edit_text_add_gas_station_gasoline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gasoline" />
+
+            <RadioButton
+                android:id="@+id/edit_text_add_gas_station_diesel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diesel" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edit_text_add_gas_station_ail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount(in L)"
+            android:ems="10"
+            android:padding="10dp"
+            android:textColorHint="#A8A8A8"
+            android:inputType="number|none"
+            android:maxLength="7"
+            android:digits="0123456789">
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_text_add_gas_station_ppl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Price/L(in C$)"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:padding="10dp"
+            android:textColorHint="#A8A8A8"
+            android:maxLength="7"
+            android:digits="0123456789.">
+        </EditText>
+
+    </LinearLayout>
+</ScrollView>
