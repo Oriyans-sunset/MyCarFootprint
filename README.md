@@ -7,7 +7,7 @@ Instructions:
 - run it on an emulator(instructions to install an emulator: https://developer.android.com/studio/run/emulator)
 
 # Features: 
-- Feed the accurate data about fuel price, and distance of trip.
+- Feed the accurate data about fuel price, and amount.
 - Make of list of all your trips.
 - Beautiful and simple UI to make adding trips easy.
 
